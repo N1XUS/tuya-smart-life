@@ -294,6 +294,12 @@ BINARY_SENSORS: dict[str, tuple[SmartLifeBinarySensorEntityDescription, ...]] = 
             device_class=BinarySensorDeviceClass.WINDOW,
             on_value="opened",
         ),
+        SmartLifeBinarySensorEntityDescription(
+            key=DPCode.WORK_STATE,
+            name="Work state",
+            device_class=BinarySensorDeviceClass.OPENING,
+            on_value="opened",
+        ),
     ),
     # Temperature and Humidity Sensor
     # https://developer.tuya.com/en/docs/iot/categorywsdcg?id=Kaiuz3hinij34
